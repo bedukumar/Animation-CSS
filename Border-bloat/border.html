@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .con{
+            width: 500px;
+            height: 500px;
+            border-radius: 47% 48% 48% 48% / 59% 61% 32% 32% ;
+            background-color: black;
+            animation: bubbling;
+            animation-duration: 3s;
+            animation-iteration-count:infinite ;
+            animation-direction: alternate;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        @keyframes bubbling{
+            0% {
+                border-radius: 47% 48% 48% 48% / 59% 61% 32% 32% ;
+
+            }
+            50%{
+                border-radius: 37% 52% 37% 44% / 33% 44% 36% 41% ;
+            }
+            100%{
+                background-color: 28% 52% 20% 44% / 33% 44% 27% 41% ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con"></div>
+</body>
+</html>
