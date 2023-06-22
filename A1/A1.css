@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    height: 900px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /* animation-name:square;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+    animation:square 4s linear infinite alternate forwards running;
+}
+@keyframes square{
+    0%  {background-color: red;
+        left: 0%;
+        top:0%;
+    }
+    25% {background-color: blue;
+        left: 85%;
+        top: 0%;}
+    55% {background-color: green;
+        left: 85%;
+        top: 100%;
+    }
+    75% {background-color: yellow;
+        left: 0%;
+        top: 100%;
+    }
+    100%{background-color: aqua;
+        left: 0%;
+        top: 0%;
+    }
+}
