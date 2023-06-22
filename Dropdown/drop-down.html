@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./drop-down.css" />
+  </head>
+  <body>
+    <div class="TOPBAR"></div>
+    <nav>
+      <div class="C">Home</div>
+      <div class="C">Details</div>
+      <div class="C">Markets</div>
+      <div class="A">
+        <div id="B">drop-down</div>
+        <div id="X">
+          <div class="Y">item</div>
+          <div class="Y">item</div>
+          <div class="Y">item</div>
+          <div class="Y">item</div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      var x = document.getElementById("X");
+      var b = document.getElementById("B");
+      b.addEventListener("click", () => {
+        if (x.style.display == "none") {
+          x.style.display = "flex";
+        } else {
+          x.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
