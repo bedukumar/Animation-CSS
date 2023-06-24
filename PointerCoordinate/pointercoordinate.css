@@ -1,0 +1,44 @@
+ body {
+     background-color: black;
+     height: 900px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .baps {
+     width: 100%;
+     height: 60%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .bap {
+     background-color: rgb(43, 43, 43);
+     width: 30em;
+     height: 30em;
+     border-radius: 2em;
+ }
+
+ .bap2 {
+     width: 30em;
+     height: 30em;
+     border-radius: 2em;
+     margin: 0;
+     background: radial-gradient(1100px circle at var(--mouse-x) var(--mouse-y), rgba(167, 165, 165, 0.421), transparent 40%);
+ }
+
+ .write {
+     background-color: rgb(175, 80, 80);
+     width: 30em;
+     height: 10em;
+     border-radius: 2em;
+     font-family: Arial, Helvetica, sans-serif;
+     color: aliceblue;
+     text-align: center;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
